@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pas.group.cinemaisingresso;
+package model;
 
 import java.util.ArrayList;
 
@@ -13,48 +13,50 @@ import java.util.ArrayList;
  */
 public class Cinema {
     private String shopping;
-    private ArrayList<Sala> salas;
     private Catalogo catalogo;
+    private ArrayList<Sala> salas;
+    private ArrayList<Sessao> sessoes;
+    private ArrayList<Ingresso> ingressos;
     
-    /**
-     * @return the shopping
-     */
     public String getShopping() {
         return shopping;
     }
 
-    /**
-     * @param shopping the shopping to set
-     */
     public void setShopping(String shopping) {
         this.shopping = shopping;
     }
 
-    /**
-     * @return the salas
-     */
     public ArrayList<Sala> getSalas() {
         return salas;
     }
 
-    /**
-     * @param salas the salas to set
-     */
     public void setSalas(ArrayList<Sala> salas) {
         this.salas = salas;
     }
 
-    /**
-     * @return the catalogo
-     */
     public Catalogo getCatalogo() {
         return catalogo;
     }
 
-    /**
-     * @param catalogo the catalogo to set
-     */
     public void setCatalogo(Catalogo catalogo) {
         this.catalogo = catalogo;
     }
+
+    public ArrayList<Sessao> getSessoes() {
+        return sessoes;
+    }
+
+    public void setSessoes(ArrayList<Sessao> sessoes) {
+        this.sessoes = sessoes;
+    }
+
+    public ArrayList<Ingresso> getIngressos() {
+        return ingressos;
+    }
+
+    public void setIngressos(ArrayList<Ingresso> ingressos) {
+        this.ingressos = ingressos;
+    }
+    
+    
 }
