@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pas.group.cinemaisingresso;
+package model;
 
 /**
  *
@@ -18,100 +18,68 @@ public class Filme {
     private String atorPrincipal;
     private String categoria;
 
-    /**
-     * @return the titulo
-     */
+    public Filme(String titulo, int duracao, int classificacao, String descricao, String diretor, String atorPrincipal, String categoria) {
+        this.titulo = titulo;
+        this.duracao = duracao;
+        this.classificacao = classificacao;
+        this.descricao = descricao;
+        this.diretor = diretor;
+        this.atorPrincipal = atorPrincipal;
+        this.categoria = categoria;
+    }
+    
     public String getTitulo() {
         return titulo;
     }
 
-    /**
-     * @param titulo the titulo to set
-     */
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    /**
-     * @return the duracao
-     */
     public int getDuracao() {
         return duracao;
     }
 
-    /**
-     * @param duracao the duracao to set
-     */
     public void setDuracao(int duracao) {
         this.duracao = duracao;
     }
 
-    /**
-     * @return the classificacao
-     */
     public int getClassificacao() {
         return classificacao;
     }
 
-    /**
-     * @param classificacao the classificacao to set
-     */
     public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
     }
 
-    /**
-     * @return the descricao
-     */
     public String getDescricao() {
         return descricao;
     }
 
-    /**
-     * @param descricao the descricao to set
-     */
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    /**
-     * @return the diretor
-     */
     public String getDiretor() {
         return diretor;
     }
 
-    /**
-     * @param diretor the diretor to set
-     */
     public void setDiretor(String diretor) {
         this.diretor = diretor;
     }
 
-    /**
-     * @return the atorPrincipal
-     */
     public String getAtorPrincipal() {
         return atorPrincipal;
     }
 
-    /**
-     * @param atorPrincipal the atorPrincipal to set
-     */
     public void setAtorPrincipal(String atorPrincipal) {
         this.atorPrincipal = atorPrincipal;
     }
 
-    /**
-     * @return the categoria
-     */
     public String getCategoria() {
         return categoria;
     }
 
-    /**
-     * @param categoria the categoria to set
-     */
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
