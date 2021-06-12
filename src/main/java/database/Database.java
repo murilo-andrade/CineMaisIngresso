@@ -47,10 +47,10 @@ public class Database {
     }
     
     public Filme getFilme(String titulo) {
-        for(Filme filme : filmes) {
-            if(filme.getTitulo().equals(titulo)){
-                System.out.println(filme.getTitulo());
-                return filme;
+        for(Filme filmeDB : filmes) {
+            if(filmeDB.getTitulo().equals(titulo)){
+                System.out.println(filmeDB.getTitulo());
+                return filmeDB;
             }
         }
         System.out.println(this.filme.getTitulo());
