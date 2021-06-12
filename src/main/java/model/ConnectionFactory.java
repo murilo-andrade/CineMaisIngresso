@@ -12,7 +12,7 @@ import database.Database;
  * @author Murilo Andrade
  */
 public class ConnectionFactory {
-    private Database database;
+    //private Database database;
     private boolean isConnected = false;
     
     public ConnectionFactory() {
@@ -23,7 +23,7 @@ public class ConnectionFactory {
         Database conn = null;
         System.out.println(isConnected);
         if(!this.isConnected) {
-            conn = this.database.connect();
+            conn = Database.connect();
             this.isConnected = true;
         }
         return conn;
