@@ -8,6 +8,7 @@ package view;
 import model.Filme;
 import controller.FilmeDAO;
 import model.ConnectionFactory;
+import database.Database;
 
 /**
  *
@@ -26,7 +27,7 @@ public class Teste {
             System.out.println("Filme adicionado com sucesso!");
         }
         
-        Filme filme = filmeDao.getFilme(conn.getConn(), "Teste");
+        Filme filme = filmeDao.getFilme(Database.connect(), "Teste");
         if(filme != null) {
             System.out.println(filme.getTitulo());
         }
