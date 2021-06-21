@@ -13,9 +13,11 @@ public class ConnectionFactory {
     private static final String PASSWORD  = "wh0c4r3z";
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/CineMais";
 
-    private ConnectionFactory() {}
+    private ConnectionFactory() {
+    
+    }
 
-    public static Connection getConnection() {
+    public static Connection getConnection() throws SQLException {
         // Aplicação Singleton//
         try {
             if(con == null) {

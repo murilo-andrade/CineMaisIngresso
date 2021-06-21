@@ -25,7 +25,7 @@ public class Main {
 
         while (true) {
 
-            System.out.print("|\n-------Cine Mais Ingresso-------|\n");
+            System.out.print("\n.--------Cine Mais Ingresso--------.\n");
             System.out.print("|----------------------------------|\n");
             System.out.print("| Opção 1 - Comprar Ingresso       |\n");
             System.out.print("| Opção 2 - Cancelar Ingresso      |\n");
@@ -49,7 +49,7 @@ public class Main {
             System.out.print("| Opção 20 - Excluir Sala          |\n");
             System.out.print("| Opção 21 - Listar Salas          |\n");
             System.out.print("| Opção 0 - Sair                   |\n");
-            System.out.print("|----------------------------------|\n");
+            System.out.print("'----------------------------------'\n");
             System.out.print("Digite uma opção: ");
 
             int opcao = menu.nextInt();
