@@ -1,19 +1,25 @@
 package model;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Murilo Andrade
- */
 public class Ingresso {
     private String dataVenda;
-    private boolean cancelado;
-    private Sessao sessao;
+    private int cancelado;
+    private double valor;
+    private String filme;
+    private Sala sala;
+    private int id;
+
+    public Ingresso() {
+        this.valor = 50;
+        this.cancelado = 0;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId (int id) {
+        this.id = id;
+    }
     
     public void imprimir(){
     }
@@ -35,28 +41,54 @@ public class Ingresso {
     /**
      * @return the cancelado
      */
-    public boolean isCancelado() {
+    public int getCancelado() {
         return cancelado;
     }
 
     /**
      * @param cancelado the cancelado to set
      */
-    public void setCancelado(boolean cancelado) {
+    public void setCancelado(int cancelado) {
         this.cancelado = cancelado;
     }
 
     /**
      * @return the sessao
      */
-    public Sessao getSessao() {
-        return sessao;
+    public double getValor() {
+        return valor;
     }
 
     /**
      * @param sessao the sessao to set
      */
-    public void setSessao(Sessao sessao) {
-        this.sessao = sessao;
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    public String getFilme() {
+        return filme;
+    }
+
+    public void setFilme(String filme) {
+        this.filme = filme;
+    }
+
+    public Sala getSala() {
+        return sala;
+    }
+
+    public void setSala(Sala sala) {
+        this.sala = sala;
+    }
+
+    public double calcValorIngresso()
+    {
+        if(sala.getIs3d() == 1) {
+            return  getValor() * 1.2; 
+        }
+        else {
+            return getValor();
+        }
     }
 }

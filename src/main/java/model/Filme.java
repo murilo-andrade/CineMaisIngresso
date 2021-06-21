@@ -1,24 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
-/**
- *
- * @author Murilo Andrade
- */
 public class Filme {
+    private int id;
     private String titulo;
-    private int duracao;
-    private int classificacao;
+    private String duracao;
+    private String classificacao;
     private String descricao;
     private String diretor;
     private String atorPrincipal;
     private String categoria;
 
-    public Filme(String titulo, int duracao, int classificacao, String descricao, String diretor, String atorPrincipal, String categoria) {
+    public Filme() {
+        
+    }
+    public Filme(String titulo, String duracao, String classificacao, String descricao, String diretor, String atorPrincipal, String categoria) {
         this.titulo = titulo;
         this.duracao = duracao;
         this.classificacao = classificacao;
@@ -28,6 +23,14 @@ public class Filme {
         this.categoria = categoria;
     }
     
+    public int getId() {
+        return id;
+    }
+
+    public void setID(int id) {
+        this.id = id;
+    }
+
     public String getTitulo() {
         return titulo;
     }
@@ -36,19 +39,19 @@ public class Filme {
         this.titulo = titulo;
     }
 
-    public int getDuracao() {
+    public String getDuracao() {
         return duracao;
     }
 
-    public void setDuracao(int duracao) {
+    public void setDuracao(String duracao) {
         this.duracao = duracao;
     }
 
-    public int getClassificacao() {
+    public String getClassificacao() {
         return classificacao;
     }
 
-    public void setClassificacao(int classificacao) {
+    public void setClassificacao(String classificacao) {
         this.classificacao = classificacao;
     }
 
