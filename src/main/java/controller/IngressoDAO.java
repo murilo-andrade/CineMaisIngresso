@@ -24,7 +24,7 @@ public class IngressoDAO {
             pstm.setString(1, ingresso.getDataVenda());
             pstm.setInt(2, ingresso.getCancelado());
             pstm.setDouble(3, ingresso.getValor());
-            pstm.setInt(4, ingresso.getFilme().getId());
+            /* pstm.setInt(4, ingresso.getFilme().getId());*/
             pstm.setInt(5, ingresso.getSala().getId());
 
             pstm.executeUpdate();
