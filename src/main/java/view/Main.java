@@ -117,7 +117,7 @@ public class Main {
 
                 case 7:
                     System.out.println("Indice do Filme a ser Alterado:");
-                    filme01.setID(leitor.nextInt());
+                    filme01.setId(leitor.nextInt());
                     System.out.println("Novo Titulo:");
                     filme01.setTitulo(leitor.nextLine());
                     System.out.println("Nova Duracao:");

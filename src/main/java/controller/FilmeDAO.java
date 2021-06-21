@@ -60,7 +60,7 @@ public class FilmeDAO {
             while(rset.next()) {
                 
                 Filme filme = new Filme();
-                filme.setID(rset.getInt("id"));
+                filme.setId(rset.getInt("id"));
                 filme.setTitulo(rset.getString("titulo"));
                 filme.setDuracao(rset.getString("duracao"));
                 filme.setClassificacao(rset.getString("classificacao"));

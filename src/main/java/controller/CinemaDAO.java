@@ -53,7 +53,7 @@ public class CinemaDAO {
 
             while(rset.next()) {
                 
-                Cinema cinema = new Cinema());
+                Cinema cinema = new Cinema();
                 cinema.setId(rset.getInt("id"));
                 cinema.setShopping(rset.getString("shopping"));
                 cinemas.add(cinema);    
